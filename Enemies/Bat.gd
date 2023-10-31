@@ -27,7 +27,6 @@ func nav_setup():
 func _physics_process(_delta):
 	player = get_node_or_null("/root/Game/Player_Container/Player")
 	var s = looking_speed
-	var points = initial_position
 	if player != null and nav_ready:
 		$NavigationAgent2D.target_position = player.global_position
 		points = $NavigationAgent2D.get_next_path_position()
