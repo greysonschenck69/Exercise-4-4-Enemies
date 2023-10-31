@@ -49,7 +49,7 @@ func move_vector():
 func _unhandled_input(event):
 	if event.is_action_pressed("left"):
 		direction = -1
-	if event.is_action_pressed("right"):
+	if event.is_action_pressed("ui_right"):
 		direction = 1
 
 func set_animation(anim, off=Vector2.ZERO):
