@@ -1,11 +1,10 @@
-[gd_scene load_steps=48 format=3 uid="uid://d32g6ub2xg53j"]
+[gd_scene load_steps=47 format=3 uid="uid://d32g6ub2xg53j"]
 
 [ext_resource type="Texture2D" uid="uid://dwnxbpatsvd1h" path="res://Assets/tilesheet_complete_2X.png" id="1"]
 [ext_resource type="Script" path="res://Camera.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://cye7bc32e7aer" path="res://Enemies/Golem.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://cqwfa5aslniok" path="res://Enemies/Wolf.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://c3tf31w2kdtx1" path="res://Enemies/Bat.tscn" id="5"]
-[ext_resource type="Script" path="res://Enemies/Bat.gd" id="5_t3r6q"]
 [ext_resource type="Script" path="res://StateMachine/Player_Container.gd" id="12"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ekmww"]
@@ -466,7 +465,6 @@ position = Vector2(3273, -198)
 
 [node name="Bat" parent="Enemy_Container" instance=ExtResource("5")]
 position = Vector2(6989, -1096)
-script = ExtResource("5_t3r6q")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("4")
